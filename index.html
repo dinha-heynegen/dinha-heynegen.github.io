@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Dinha HEYNEGEN</title>
+  <meta name="description" content="Portfolio BTS SIO SISR — Dinha HEYNEGEN" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons" type="image/x-icon">
+</head>
+
+<body>
+  <!-- WELCOME (toujours AU-DESSUS) -->
+  <section id="welcome" class="welcome" aria-label="Page d'accueil">
+    <div class="welcome-inner">
+      <p class="welcome-kicker">Bienvenue sur mon portfolio</p>
+      <h2 class="welcome-title">DINHA HEYNEGEN</h2>
+      <p class="welcome-sub">BTS SIO • Option SISR • 2024–2026</p>
+      <div class="welcome-hint" aria-hidden="true">↓ Scroll</div>
+    </div>
+  </section>
+
+  <!-- SITE -->
+  <div id="site" class="site">
+    <div class="topbar" id="top">
+      <div class="progress" id="progress" aria-hidden="true"></div>
+
+      <div class="container topbar-inner">
+        <div class="brand">
+          <h2>DINHA HEYNEGEN</h2>
+          <p>BTS SIO • Option SISR • 2024–2026</p>
+        </div>
+
+        <nav aria-label="Navigation">
+          <div class="navlinks" id="navlinks">
+            <a href="#about-me" data-nav>À propos</a>
+            <a href="#bts-sio" data-nav>BTS SIO</a>
+            <a href="#journey" data-nav>Parcours</a>
+            <a href="#projects" data-nav>Projets</a>
+            <a href="#experience" data-nav>Expériences</a>
+            <a href="#tech-watch" data-nav>Veille</a>
+            <a href="#certifications" data-nav>Certifs</a>
+            <a href="#skills" data-nav>Compétences</a>
+            <a href="#contact" data-nav>Contact</a>
+          </div>
+
+          <button class="btn hamburger" id="menuBtn" type="button" aria-label="Ouvrir le menu">☰ Menu</button>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="drawer" id="drawer" aria-label="Menu mobile">
+          <a href="#about-me" data-nav>À propos</a>
+          <a href="#bts-sio" data-nav>BTS SIO</a>
+          <a href="#journey" data-nav>Parcours</a>
+          <a href="#projects" data-nav>Projets</a>
+          <a href="#experience" data-nav>Expériences</a>
+          <a href="#tech-watch" data-nav>Veille</a>
+          <a href="#certifications" data-nav>Certifs</a>
+          <a href="#skills" data-nav>Compétences</a>
+          <a href="#contact" data-nav>Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="panel reveal">
+          <div class="inner">
+            <h1 class="headline">Portfolio BTS SIO (SISR)</h1>
+            <p>Bienvenue sur mon portfolio ! Vous y trouverez mes projets, expériences et compétences en systèmes et réseaux ainsi que mes projets et expériences liés à mon cursus.</p>
+            <div class="pillrow">
+              <span class="pill">Réseaux</span>
+              <span class="pill">Systèmes</span>
+              <span class="pill">Sécurité</span>
+              <span class="pill">Web</span>
+            </div>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">Voir mes projets</a>
+              <a class="btn" href="#contact">Me contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="inner">
+            <div class="stat-grid">
+              <div class="stat"><div class="k">Formation</div><div class="v">BTS SIO • SISR</div></div>
+              <div class="stat"><div class="k">Objectif</div><div class="v">Cybersécurité</div></div>
+              <div class="stat"><div class="k">Expérience</div><div class="v">Stage + Alternance</div></div>
+              <div class="stat"><div class="k">Profil</div><div class="v">Analytique et persévérante</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about-me" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>À propos de moi</h2>
+          </div>
+
+          <div class="grid">
+            <div class="card reveal">
+              <h3>Qui je suis</h3>
+              <p class="sub">
+                Je m'appelle Dinha HEYNEGEN, en deuxième année de BTS SIO option SISR à l'école INGETIS.
+                Initialement en SLAM en première année, j'ai choisi de me réorienter vers SISR afin de me concentrer davantage sur les aspects systèmes et réseaux.
+              </p>
+            </div>
+
+            <div class="card reveal">
+              <h3>Ce que je vise</h3>
+              <p>Je veux évoluer vers la cybersécurité et devenir pentester.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bts-sio" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Qu'est-ce que le BTS SIO ?</h2>
+          </div>
+
+          <div class="grid">
+            <div class="card reveal">
+              <h3>Définition</h3>
+              <p>
+                Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau Bac+2 qui forme des techniciens capables de concevoir, déployer et maintenir des solutions informatiques adaptées aux besoins des entreprises.
+                Il propose deux options : SISR (Solutions d'Infrastructure, Systèmes et Réseaux) et SLAM (Solutions Logicielles et Applications Métiers).<br><br>
+                - <b>Option SISR</b> : axée sur les réseaux, systèmes, sécurité et administration. Elle forme des profils capables d'installer et maintenir un système d'information.<br><br>
+                - <b>Option SLAM</b> : centrée sur le développement, les applications et les bases de données. Elle prépare à la création et la maintenance d'applications logicielles.
+              </p>
+            </div>
+
+            <div class="card reveal">
+              <h3>Options</h3>
+              <ul class="list">
+                <li class="item">
+                  <div class="left"><strong>SISR</strong><span>Réseaux, systèmes, sécurité, administration.</span></div>
+                  <span class="badge">Infra</span>
+                </li>
+                <li class="item">
+                  <div class="left"><strong>SLAM</strong><span>Développement, applications, bases de données.</span></div>
+                  <span class="badge">Dev</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Mon parcours</h2>
+          </div>
+
+          <div class="card reveal">
+            <div class="timeline">
+              <div class="titem"><strong>2024-2026 — BTS SIO, option SISR</strong><p>INGETIS</p></div>
+              <div class="titem"><strong>2021-2024 — Licence de Physique</strong><p>Université de Poitiers</p></div>
+              <div class="titem"><strong>2018 — Baccalauréat Scientifique</strong><p>Lycée Maurice Ravel</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Projets</h2>
+          </div>
+        </div>
+
+        <div class="scroll-showcase" data-showcase>
+          <div class="sticky">
+            <div class="container">
+              <div class="showcase">
+                <div class="showcase-left">
+                  <img
+                    id="showcaseImage"
+                    class="hero-img"
+                    src="chrome_Unyt5Xqc66.png"
+                    alt="Visuel du projet"
+                    loading="lazy"
+                  />
+
+                  <div id="showcaseTags" class="mini">
+                    <span class="chip">Systèmes</span>
+                    <span class="chip">Supervision</span>
+                    <span class="chip">Zabbix</span>
+                  </div>
+
+                  <div class="schema-box">
+                    <h4>Schéma du projet</h4>
+                    <p id="schemaText">Consulter le schéma associé à ce projet.</p>
+                    <a
+                      id="schemaLink"
+                      class="btn"
+                      href="C:\Users\User\Desktop\Portfolio BTS SIO\zabbix-schema.png"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le schéma
+                    </a>
+                  </div>
+                </div>
+
+                <div class="showcase-right">
+                  <article
+                    class="frame"
+                    data-image="chrome_Unyt5Xqc66.png"
+                    data-alt="Supervision Zabbix"
+                    data-tags="Systèmes,Supervision,Zabbix"
+                    data-schema="C:\Users\User\Desktop\Portfolio BTS SIO\zabbix-schema.png"
+                  >
+                    <h3>Mise en place d’un système de supervision (Zabbix)</h3>
+                    <p>
+                      Mise en place d’une solution de supervision avec Zabbix afin de surveiller l’état des serveurs et services
+                      et configurer des alertes pour détecter rapidement les incidents.
+                    </p>
+                  </article>
+
+                  <article
+                    class="frame"
+                    data-image="C:\Users\User\Desktop\Portfolio BTS SIO\reseau-schema.png"
+                    data-alt="VPN accès distant sécurisé"
+                    data-tags="Réseau,VPN,Sécurité"
+                    data-schema="C:\Users\User\Desktop\Portfolio BTS SIO\reseau-schema.png"
+                  >
+                    <h3>Mise en place d’un accès distant sécurisé (VPN)</h3>
+                    <p>
+                      Déploiement d’une solution VPN pour permettre un accès à distance sécurisé au réseau interne,
+                      avec chiffrement des communications et gestion des accès.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Expériences professionnelles</h2>
+          </div>
+
+          <div class="grid">
+            <div class="card reveal">
+              <h3>Stage — Groupe Vital</h3>
+              <p>- Enrôlement et paramétrage des tablettes <br>
+              - Assemblage des contenants (bornes WIFI, tablettes, câbles)</p>
+            </div>
+            <div class="card reveal">
+              <h3>Alternance — TRUMPF</h3>
+              <p>
+                - Support utilisateur à distance (TeamViewer, Bureau à distance) <br>
+                - Gestion des incidents et demandes via le logiciel de ticketing interne <br>
+                - Installation et configuration de logiciels et machines (plieuses, lasers, poinçonneuses...) <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech-watch" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Veille technologique</h2>
+          </div>
+
+          <div class="grid">
+            <div class="card reveal">
+              <h3>Sources</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li class="item">
+                  <div class="left"><strong>IT-Connect</strong><span>Infra/sécu</span></div>
+                  <span class="badge">
+                    <a
+                      href="https://www.it-connect.fr/"
+                      class="badge badge-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Accéder au site IT-Connect"
+                    >
+                      Blog
+                    </a>
+                  </span>
+                </li>
+                <li class="item">
+                  <div class="left"><strong>Daily.dev</strong><span>Feed tech</span></div>
+                  <span class="badge">
+                    <a
+                      href="https://daily.dev/fr-fr"
+                      class="badge badge-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Accéder au moteur de veille Daily.dev"
+                    >
+                      Feed
+                    </a>
+                  </span>
+                </li>
+                <li class="item">
+                  <div class="left"><strong>OpenClassrooms</strong><span>Feed tech</span></div>
+                  <span class="badge">
+                    <a
+                      href="https://openclassrooms.com/fr/"
+                      class="badge badge-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Accéder au site OpenClassrooms"
+                    >
+                      Site
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card reveal">
+              <h3>Thèmes</h3>
+              <p>Réseaux, durcissement, vulnérabilités, sécurité.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Certifications</h2>
+          </div>
+
+          <div class="cert-scroll reveal" aria-label="Certificats">
+            <img src="chrome_AZs4PmAod4.png" alt="Certificat 1" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>Mes compétences</h2>
+          </div>
+
+          <div class="grid">
+            <div class="card reveal">
+              <h3>Tech</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li class="item"><div class="left"><strong>Réseaux</strong><span>VLAN, DHCP/DNS, routage (à adapter)</span></div><span class="badge">SISR</span></li>
+                <li class="item"><div class="left"><strong>Systèmes</strong><span>Windows/Linux, services</span></div><span class="badge">Admin</span></li>
+                <li class="item"><div class="left"><strong>Sécurité</strong><span>Bonnes pratiques, durcissement</span></div><span class="badge">Sec</span></li>
+              </ul>
+            </div>
+
+            <div class="card reveal">
+              <h3>Documents</h3>
+
+              <div class="docs-links">
+                <div class="doc-box">
+                  <h4>CV</h4>
+                  <p>Télécharger mon CV en PDF</p>
+                  <a class="btn" href="CV alternance (photo).pdf" target="_blank" rel="noopener noreferrer">
+                    📄 CV (PDF)
+                  </a>
+                </div>
+
+                <div class="doc-box">
+                  <h4>Tableau de compétences</h4>
+                  <p>Consulter le tableau de compétences du BTS SIO</p>
+                  <a class="btn" href="tableau-competences.pdf" target="_blank" rel="noopener noreferrer">
+                    📊 Tableau de compétences
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="card">
+          <div class="socials">
+            <a class="iconbtn" href="https://www.linkedin.com/in/dinha-heynegen?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbUgYo%2FOnS9CYeyKcdFHOgA%3D%3D" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+            <a class="iconbtn" href="mailto:dinha.heynegen@gmail.com">✉️ Email</a>
+            <a class="iconbtn" href="#" target="_blank" rel="https://github.com/Itsdinha11">💻 GitHub</a>
+          </div>
+        </div>
+
+        <p class="footnote">© <span id="year"></span> Dinha HEYNEGEN</p>
+      </div>
+    </footer>
+
+    <a id="backToTop" class="btn" href="#top" aria-label="Retour en haut">↑</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
