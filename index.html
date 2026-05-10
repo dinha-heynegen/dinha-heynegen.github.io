@@ -6,11 +6,9 @@
   <title>Portfolio - Dinha HEYNEGEN</title>
   <meta name="description" content="Portfolio BTS SIO SISR — Dinha HEYNEGEN" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons" type="image/x-icon">
 </head>
-
+ 
 <body>
-  <!-- WELCOME (toujours AU-DESSUS) -->
   <section id="welcome" class="welcome" aria-label="Page d'accueil">
     <div class="welcome-inner">
       <p class="welcome-kicker">Bienvenue sur mon portfolio</p>
@@ -19,18 +17,17 @@
       <div class="welcome-hint" aria-hidden="true">↓ Scroll</div>
     </div>
   </section>
-
-  <!-- SITE -->
+ 
   <div id="site" class="site">
     <div class="topbar" id="top">
       <div class="progress" id="progress" aria-hidden="true"></div>
-
+ 
       <div class="container topbar-inner">
         <div class="brand">
           <h2>DINHA HEYNEGEN</h2>
           <p>BTS SIO • Option SISR • 2024–2026</p>
         </div>
-
+ 
         <nav aria-label="Navigation">
           <div class="navlinks" id="navlinks">
             <a href="#about-me" data-nav>À propos</a>
@@ -43,11 +40,10 @@
             <a href="#skills" data-nav>Compétences</a>
             <a href="#contact" data-nav>Contact</a>
           </div>
-
           <button class="btn hamburger" id="menuBtn" type="button" aria-label="Ouvrir le menu">☰ Menu</button>
         </nav>
       </div>
-
+ 
       <div class="container">
         <div class="drawer" id="drawer" aria-label="Menu mobile">
           <a href="#about-me" data-nav>À propos</a>
@@ -62,7 +58,7 @@
         </div>
       </div>
     </div>
-
+ 
     <header class="hero">
       <div class="container hero-grid">
         <div class="panel reveal">
@@ -81,7 +77,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="panel reveal">
           <div class="inner">
             <div class="stat-grid">
@@ -94,14 +90,13 @@
         </div>
       </div>
     </header>
-
+ 
     <main>
       <section id="about-me" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>À propos de moi</h2>
           </div>
-
           <div class="grid">
             <div class="card reveal">
               <h3>Qui je suis</h3>
@@ -110,55 +105,65 @@
                 Initialement en SLAM en première année, j'ai choisi de me réorienter vers SISR afin de me concentrer davantage sur les aspects systèmes et réseaux.
               </p>
             </div>
-
             <div class="card reveal">
               <h3>Ce que je vise</h3>
-              <p>Je veux évoluer vers la cybersécurité et devenir pentester.</p>
+              <p>Attirée par les défis techniques et la résolution de problèmes complexes, je souhaite évoluer vers la cybersécurité offensive et devenir red teamer.</p>
             </div>
           </div>
         </div>
       </section>
-
+ 
       <section id="bts-sio" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Qu'est-ce que le BTS SIO ?</h2>
           </div>
-
           <div class="grid">
             <div class="card reveal">
               <h3>Définition</h3>
               <p>
                 Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau Bac+2 qui forme des techniciens capables de concevoir, déployer et maintenir des solutions informatiques adaptées aux besoins des entreprises.
-                Il propose deux options : SISR (Solutions d'Infrastructure, Systèmes et Réseaux) et SLAM (Solutions Logicielles et Applications Métiers).<br><br>
-                - <b>Option SISR</b> : axée sur les réseaux, systèmes, sécurité et administration. Elle forme des profils capables d'installer et maintenir un système d'information.<br><br>
-                - <b>Option SLAM</b> : centrée sur le développement, les applications et les bases de données. Elle prépare à la création et la maintenance d'applications logicielles.
+                Il propose deux options : SISR (Solutions d'Infrastructure, Systèmes et Réseaux) et SLAM (Solutions Logicielles et Applications Métiers).
               </p>
             </div>
-
             <div class="card reveal">
               <h3>Options</h3>
               <ul class="list">
-                <li class="item">
-                  <div class="left"><strong>SISR</strong><span>Réseaux, systèmes, sécurité, administration.</span></div>
-                  <span class="badge">Infra</span>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="sisr">
+                    <div class="left"><strong>SISR</strong></div>
+                    <div class="accordion-right">
+                      <span class="badge">Infra</span>
+                      <span class="accordion-arrow">↓</span>
+                    </div>
+                  </div>
+                  <div class="accordion-body" id="accordion-sisr">
+                    <p>Axée sur les réseaux, systèmes, sécurité et administration. Elle forme des profils capables d'installer et maintenir un système d'information.</p>
+                  </div>
                 </li>
-                <li class="item">
-                  <div class="left"><strong>SLAM</strong><span>Développement, applications, bases de données.</span></div>
-                  <span class="badge">Dev</span>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="slam">
+                    <div class="left"><strong>SLAM</strong></div>
+                    <div class="accordion-right">
+                      <span class="badge">Dev</span>
+                      <span class="accordion-arrow">↓</span>
+                    </div>
+                  </div>
+                  <div class="accordion-body" id="accordion-slam">
+                    <p>Centrée sur le développement, les applications et les bases de données. Elle prépare à la création et la maintenance d'applications logicielles.</p>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
+ 
       <section id="journey" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Mon parcours</h2>
           </div>
-
           <div class="card reveal">
             <div class="timeline">
               <div class="titem"><strong>2024-2026 — BTS SIO, option SISR</strong><p>INGETIS</p></div>
@@ -168,217 +173,243 @@
           </div>
         </div>
       </section>
-
+ 
       <section id="projects" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Projets</h2>
           </div>
-        </div>
-
-        <div class="scroll-showcase" data-showcase>
-          <div class="sticky">
-            <div class="container">
-              <div class="showcase">
-                <div class="showcase-left">
-                  <img
-                    id="showcaseImage"
-                    class="hero-img"
-                    src="chrome_Unyt5Xqc66.png"
-                    alt="Visuel du projet"
-                    loading="lazy"
-                  />
-
-                  <div id="showcaseTags" class="mini">
-                    <span class="chip">Systèmes</span>
-                    <span class="chip">Supervision</span>
-                    <span class="chip">Zabbix</span>
-                  </div>
-
-                  <div class="schema-box">
-                    <h4>Schéma du projet</h4>
-                    <p id="schemaText">Consulter le schéma associé à ce projet.</p>
-                    <a
-                      id="schemaLink"
-                      class="btn"
-                      href="C:\Users\User\Desktop\Portfolio BTS SIO\zabbix-schema.png"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Voir le schéma
-                    </a>
-                  </div>
-                </div>
-
-                <div class="showcase-right">
-                  <article
-                    class="frame"
-                    data-image="chrome_Unyt5Xqc66.png"
-                    data-alt="Supervision Zabbix"
-                    data-tags="Systèmes,Supervision,Zabbix"
-                    data-schema="C:\Users\User\Desktop\Portfolio BTS SIO\zabbix-schema.png"
-                  >
-                    <h3>Mise en place d’un système de supervision (Zabbix)</h3>
-                    <p>
-                      Mise en place d’une solution de supervision avec Zabbix afin de surveiller l’état des serveurs et services
-                      et configurer des alertes pour détecter rapidement les incidents.
-                    </p>
-                  </article>
-
-                  <article
-                    class="frame"
-                    data-image="C:\Users\User\Desktop\Portfolio BTS SIO\reseau-schema.png"
-                    data-alt="VPN accès distant sécurisé"
-                    data-tags="Réseau,VPN,Sécurité"
-                    data-schema="C:\Users\User\Desktop\Portfolio BTS SIO\reseau-schema.png"
-                  >
-                    <h3>Mise en place d’un accès distant sécurisé (VPN)</h3>
-                    <p>
-                      Déploiement d’une solution VPN pour permettre un accès à distance sécurisé au réseau interne,
-                      avec chiffrement des communications et gestion des accès.
-                    </p>
-                  </article>
-                </div>
+ 
+          <div class="project-toggle-wrapper reveal">
+            <div class="toggle-track" id="toggleTrack">
+              <div class="toggle-thumb" id="toggleThumb"></div>
+              <button class="toggle-label left active" id="btnZabbix" type="button">Projet Zabbix</button>
+              <button class="toggle-label right" id="btnVPN" type="button">Projet OpenVPN + Squid</button>
+            </div>
+          </div>
+ 
+          <div class="project-panel card reveal" id="panelZabbix">
+            <div class="project-meta">
+              <div class="mini">
+                <span class="chip">Systèmes</span>
+                <span class="chip">Supervision</span>
+                <span class="chip">Zabbix</span>
+              </div>
+              <h3>Mise en place d'un système de supervision (Zabbix)</h3>
+              <p>Mise en place d'une solution de supervision avec Zabbix afin de surveiller l'état des serveurs et services et configurer des alertes pour détecter rapidement les incidents.</p>
+            </div>
+            <div class="carousel" id="carouselZabbix">
+              <div class="carousel-track">
+                <img src="zabbix-1.png" alt="Zabbix capture 1" class="carousel-img active" />
+                <img src="zabbix-2.png" alt="Zabbix capture 2" class="carousel-img" />
+                <img src="zabbix-3.png" alt="Zabbix capture 3" class="carousel-img" />
+                <img src="zabbix-4.png" alt="Zabbix capture 4" class="carousel-img" />
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn prev" type="button" aria-label="Image précédente">&#8592;</button>
+                <span class="carousel-counter"><span class="cur">1</span> / <span class="tot">4</span></span>
+                <button class="carousel-btn next" type="button" aria-label="Image suivante">&#8594;</button>
               </div>
             </div>
           </div>
-
-          <div class="spacer" aria-hidden="true"></div>
+ 
+          <div class="project-panel card reveal hidden" id="panelVPN">
+            <div class="project-meta">
+              <div class="mini">
+                <span class="chip">Réseau</span>
+                <span class="chip">VPN</span>
+                <span class="chip">Sécurité</span>
+                <span class="chip">Proxy</span>
+              </div>
+              <h3>Mise en place d'un accès distant sécurisé (OpenVPN + Squid)</h3>
+              <p>Déploiement d'une solution VPN pour permettre un accès à distance sécurisé au réseau interne, avec chiffrement des communications et gestion des accès. Filtrage du trafic via un proxy Squid.</p>
+            </div>
+            <div class="carousel" id="carouselVPN">
+              <div class="carousel-track">
+                <img src="vpn-1.png" alt="VPN capture 1" class="carousel-img active" />
+                <img src="vpn-2.png" alt="VPN capture 2" class="carousel-img" />
+                <img src="vpn-3.png" alt="VPN capture 3" class="carousel-img" />
+                <img src="vpn-4.png" alt="VPN capture 4" class="carousel-img" />
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn prev" type="button" aria-label="Image précédente">&#8592;</button>
+                <span class="carousel-counter"><span class="cur">1</span> / <span class="tot">4</span></span>
+                <button class="carousel-btn next" type="button" aria-label="Image suivante">&#8594;</button>
+              </div>
+            </div>
+          </div>
+ 
         </div>
       </section>
-
+ 
       <section id="experience" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Expériences professionnelles</h2>
           </div>
-
           <div class="grid">
             <div class="card reveal">
               <h3>Stage — Groupe Vital</h3>
-              <p>- Enrôlement et paramétrage des tablettes <br>
-              - Assemblage des contenants (bornes WIFI, tablettes, câbles)</p>
+              <p>
+                &#8594; Enrôlement et paramétrage des tablettes <br>
+                &#8594; Assemblage des contenants (bornes WIFI, tablettes, câbles) <br>
+                &#8594; Prise de rendez-vous téléphonique avec confirmation par mail <br>
+                &#8594; Inventaire du matériel récupéré
+              </p>
             </div>
             <div class="card reveal">
               <h3>Alternance — TRUMPF</h3>
               <p>
-                - Support utilisateur à distance (TeamViewer, Bureau à distance) <br>
-                - Gestion des incidents et demandes via le logiciel de ticketing interne <br>
-                - Installation et configuration de logiciels et machines (plieuses, lasers, poinçonneuses...) <br>
+                &#8594; Support utilisateur à distance (TeamViewer, Bureau à distance) <br>
+                &#8594; Gestion des incidents et demandes via le logiciel de ticketing interne <br>
+                &#8594; Installation et configuration de logiciels et machines (plieuses, lasers, poinçonneuses...) <br>
+                &#8594; Traitement des demandes utilisateurs via hotline et priorisation des incidents
               </p>
             </div>
           </div>
         </div>
       </section>
-
+ 
       <section id="tech-watch" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Veille technologique</h2>
           </div>
-
-          <div class="grid">
-            <div class="card reveal">
+          <p class="veille-intro reveal">La veille technologique consiste à surveiller régulièrement les évolutions du secteur informatique afin de rester à jour sur les nouvelles menaces, outils et pratiques.</p>
+          <div class="veille-grid reveal">
+            <div class="card veille-sources">
               <h3>Sources</h3>
               <ul class="list" style="margin-top:10px;">
-                <li class="item">
-                  <div class="left"><strong>IT-Connect</strong><span>Infra/sécu</span></div>
-                  <span class="badge">
-                    <a
-                      href="https://www.it-connect.fr/"
-                      class="badge badge-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Accéder au site IT-Connect"
-                    >
-                      Blog
-                    </a>
-                  </span>
+                <li class="item veille-item active" data-source="itconnect">
+                  <div class="left"><strong>IT-Connect</strong><span>Articles infrastructure, réseaux et sécurité</span></div>
                 </li>
-                <li class="item">
-                  <div class="left"><strong>Daily.dev</strong><span>Feed tech</span></div>
-                  <span class="badge">
-                    <a
-                      href="https://daily.dev/fr-fr"
-                      class="badge badge-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Accéder au moteur de veille Daily.dev"
-                    >
-                      Feed
-                    </a>
-                  </span>
+                <li class="item veille-item" data-source="certfr">
+                  <div class="left"><strong>CERT-FR</strong><span>Alertes et bulletins de sécurité</span></div>
                 </li>
-                <li class="item">
-                  <div class="left"><strong>OpenClassrooms</strong><span>Feed tech</span></div>
-                  <span class="badge">
-                    <a
-                      href="https://openclassrooms.com/fr/"
-                      class="badge badge-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Accéder au site OpenClassrooms"
-                    >
-                      Site
-                    </a>
-                  </span>
+                <li class="item veille-item" data-source="zataz">
+                  <div class="left"><strong>Zataz</strong><span>Actualités cybersécurité française</span></div>
+                </li>
+                <li class="item veille-item" data-source="dailydev">
+                  <div class="left"><strong>Daily.dev</strong><span>Flux personnalisé d'actualités IT</span></div>
                 </li>
               </ul>
             </div>
-            <div class="card reveal">
-              <h3>Thèmes</h3>
-              <p>Réseaux, durcissement, vulnérabilités, sécurité.</p>
+            <div class="card veille-detail">
+              <div class="veille-content active" id="itconnect">
+                <h3>Exegol — un environnement dédié à la sécurité offensive</h3>
+                <hr>
+                <p>Exegol est un environnement de pentest basé sur Docker, créé par un Français. Il propose des conteneurs préconfigurés avec plus de 400 outils offensifs, plus légers et mieux cloisonnés qu'une VM Kali classique. Chaque mission dispose de son propre workspace isolé, idéal pour un pentest professionnel.</p>
+                <hr>
+                <div class="veille-btns">
+                  <a class="btn primary" href="https://www.it-connect.fr/exegol-un-environnement-dedie-a-la-securite-offensive/" target="_blank" rel="noopener noreferrer">Lire l'article</a>
+                  <a class="btn" href="https://www.it-connect.fr/" target="_blank" rel="noopener noreferrer">Voir le blog</a>
+                </div>
+              </div>
+              <div class="veille-content" id="certfr">
+                <h3>Alerte CERT-FR — Vulnérabilité critique dans Cisco Catalyst SD-WAN</h3>
+                <hr>
+                <p>Le CERT-FR a publié une alerte sur une faille critique dans Cisco Catalyst SD-WAN (CVE-2026-20127), activement exploitée, permettant de contourner la politique de sécurité réseau. Des correctifs existent mais certaines versions en fin de vie ne seront pas patchées — une migration est nécessaire. L'alerte liste aussi des indicateurs de compromission concrets à surveiller.</p>
+                <hr>
+                <div class="veille-btns">
+                  <a class="btn primary" href="https://www.cert.ssi.gouv.fr/alerte/CERTFR-2026-ALE-002/" target="_blank" rel="noopener noreferrer">Lire l'article</a>
+                  <a class="btn" href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer">Voir le site</a>
+                </div>
+              </div>
+              <div class="veille-content" id="zataz">
+                <h3>0APT — le faux ransomware qui noie le dark web</h3>
+                <hr>
+                <p>0APT est apparu sur le dark web en revendiquant 150+ entreprises piratées, mais les analyses ont révélé une supercherie : les fichiers ne contiennent que des données aléatoires imitant un chiffrement. Le vrai objectif est de provoquer la panique pour pousser les entreprises à payer pour être retirées de la liste — sans avoir jamais été piratées.</p>
+                <hr>
+                <div class="veille-btns">
+                  <a class="btn primary" href="https://www.zataz.com/0apt-le-faux-ransomware-qui-noie-le-dark-web/" target="_blank" rel="noopener noreferrer">Lire l'article</a>
+                  <a class="btn" href="https://www.zataz.com/" target="_blank" rel="noopener noreferrer">Voir le blog</a>
+                </div>
+              </div>
+              <div class="veille-content" id="dailydev">
+                <h3>Zero Trust — pourquoi la CISA recommande d'abandonner les VPN traditionnels</h3>
+                <hr>
+                <p>La CISA recommande officiellement d'abandonner les VPN traditionnels au profit du Zero Trust : chaque accès est vérifié en continu selon l'identité, l'appareil et le contexte, sans confiance implicite. Les alternatives recommandées sont le SSE et le SASE, des architectures cloud-natives offrant un contrôle d'accès granulaire mieux adaptées aux environnements hybrides.</p>
+                <hr>
+                <div class="veille-btns">
+                  <a class="btn primary" href="https://app.daily.dev/posts/improving-data-security-with-zero-trust-principles-the-shift-from-vpns-to-sse-and-sase-solutions-eah7iduyd" target="_blank" rel="noopener noreferrer">Lire l'article</a>
+                  <a class="btn" href="https://daily.dev/" target="_blank" rel="noopener noreferrer">Voir le feed</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+ 
       <section id="certifications" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Certifications</h2>
           </div>
-
           <div class="cert-scroll reveal" aria-label="Certificats">
             <img src="chrome_AZs4PmAod4.png" alt="Certificat 1" loading="lazy">
           </div>
         </div>
       </section>
-
+ 
       <section id="skills" class="section">
         <div class="container">
           <div class="section-title reveal">
             <h2>Mes compétences</h2>
           </div>
-
           <div class="grid">
             <div class="card reveal">
               <h3>Tech</h3>
               <ul class="list" style="margin-top:10px;">
-                <li class="item"><div class="left"><strong>Réseaux</strong><span>VLAN, DHCP/DNS, routage (à adapter)</span></div><span class="badge">SISR</span></li>
-                <li class="item"><div class="left"><strong>Systèmes</strong><span>Windows/Linux, services</span></div><span class="badge">Admin</span></li>
-                <li class="item"><div class="left"><strong>Sécurité</strong><span>Bonnes pratiques, durcissement</span></div><span class="badge">Sec</span></li>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="reseaux">
+                    <div class="left"><strong>Réseaux</strong></div>
+                    <div class="accordion-right"><span class="badge">SISR</span><span class="accordion-arrow">↓</span></div>
+                  </div>
+                  <div class="accordion-body" id="accordion-reseaux">
+                    <p>VLAN, routage inter-VLAN, switches manageable, VPN OpenVPN, proxy Squid, Wireshark, analyse de trafic réseau.</p>
+                  </div>
+                </li>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="systemes">
+                    <div class="left"><strong>Systèmes</strong></div>
+                    <div class="accordion-right"><span class="badge">Admin</span><span class="accordion-arrow">↓</span></div>
+                  </div>
+                  <div class="accordion-body" id="accordion-systemes">
+                    <p>Windows Server, Active Directory, GPO, Linux (Debian/Ubuntu), virtualisation VMware/VirtualBox.</p>
+                  </div>
+                </li>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="securite">
+                    <div class="left"><strong>Sécurité</strong></div>
+                    <div class="accordion-right"><span class="badge">Sec</span><span class="accordion-arrow">↓</span></div>
+                  </div>
+                  <div class="accordion-body" id="accordion-securite">
+                    <p>pfSense, pare-feu, segmentation réseau, Wazuh, supervision et détection d'intrusion, simulation d'attaques MITM et ransomware, Kali Linux.</p>
+                  </div>
+                </li>
+                <li class="item accordion-item">
+                  <div class="accordion-header" data-accordion="outils">
+                    <div class="left"><strong>Outils</strong></div>
+                    <div class="accordion-right"><span class="badge">Tools</span><span class="accordion-arrow">↓</span></div>
+                  </div>
+                  <div class="accordion-body" id="accordion-outils">
+                    <p>Zabbix, GLPI, TeamViewer, Wireshark, Kali Linux, Bureau à distance.</p>
+                  </div>
+                </li>
               </ul>
             </div>
-
             <div class="card reveal">
               <h3>Documents</h3>
-
               <div class="docs-links">
                 <div class="doc-box">
                   <h4>CV</h4>
                   <p>Télécharger mon CV en PDF</p>
-                  <a class="btn" href="CV alternance (photo).pdf" target="_blank" rel="noopener noreferrer">
-                    📄 CV (PDF)
-                  </a>
+                  <a class="btn" href="CV.html" target="_blank" rel="noopener noreferrer">📄 CV (PDF)</a>
                 </div>
-
                 <div class="doc-box">
-                  <h4>Tableau de compétences</h4>
-                  <p>Consulter le tableau de compétences du BTS SIO</p>
-                  <a class="btn" href="tableau-competences.pdf" target="_blank" rel="noopener noreferrer">
-                    📊 Tableau de compétences
-                  </a>
+                  <h4>Tableau de synthèse</h4>
+                  <p>Consulter le tableau de synthèse du BTS SIO</p>
+                  <a class="btn" href="tableau-synthese.pdf" target="_blank" rel="noopener noreferrer">📊 Tableau de synthèse</a>
                 </div>
               </div>
             </div>
@@ -386,28 +417,26 @@
         </div>
       </section>
     </main>
-
+ 
     <footer id="contact">
       <div class="container">
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
         <div class="card">
           <div class="socials">
-            <a class="iconbtn" href="https://www.linkedin.com/in/dinha-heynegen?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbUgYo%2FOnS9CYeyKcdFHOgA%3D%3D" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+            <a class="iconbtn" href="https://www.linkedin.com/in/dinha-heynegen" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
             <a class="iconbtn" href="mailto:dinha.heynegen@gmail.com">✉️ Email</a>
-            <a class="iconbtn" href="#" target="_blank" rel="https://github.com/Itsdinha11">💻 GitHub</a>
+            <a class="iconbtn" href="https://github.com/Itsdinha11" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
           </div>
         </div>
-
         <p class="footnote">© <span id="year"></span> Dinha HEYNEGEN</p>
       </div>
     </footer>
-
+ 
     <a id="backToTop" class="btn" href="#top" aria-label="Retour en haut">↑</a>
   </div>
-
+ 
   <script src="script.js"></script>
 </body>
 </html>

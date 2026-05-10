@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Dinha HEYNEGEN</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f6f9ff;
+      color: rgba(10,18,40,.90);
+      min-height: 100vh;
+      padding: 32px 16px;
+    }
+
+    .cv {
+      max-width: 860px;
+      margin: 0 auto;
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(40,90,160,.16);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(16,40,80,.12);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, rgba(125,183,255,.3), rgba(169,215,255,.2));
+      border-bottom: 1px solid rgba(40,90,160,.16);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(125,183,255,.5);
+      box-shadow: 0 8px 24px rgba(16,40,80,.15);
+      flex-shrink: 0;
+    }
+
+    .header-info h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .header-info h1 span {
+      color: #5a9fd4;
+    }
+
+    .header-info .titre {
+      font-size: 13px;
+      color: rgba(10,18,40,.60);
+      margin-top: 4px;
+      font-weight: 500;
+      letter-spacing: .06em;
+    }
+
+    .header-info .profil {
+      font-size: 13px;
+      color: rgba(10,18,40,.70);
+      margin-top: 10px;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    .contact-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      font-size: 12px;
+      color: rgba(10,18,40,.70);
+      background: rgba(255,255,255,.70);
+      border: 1px solid rgba(40,90,160,.18);
+      border-radius: 999px;
+      padding: 5px 12px;
+    }
+
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+    }
+
+    .sidebar {
+      border-right: 1px solid rgba(40,90,160,.12);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background: rgba(246,249,255,.5);
+    }
+
+    .main {
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #5a9fd4;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(125,183,255,.3);
+    }
+
+    .skill-item {
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: rgba(10,18,40,.75);
+      line-height: 1.5;
+    }
+
+    .skill-item strong {
+      color: rgba(10,18,40,.90);
+      font-weight: 600;
+    }
+
+    .soft-item {
+      font-size: 13px;
+      color: rgba(10,18,40,.70);
+      padding: 4px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .soft-item::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: #5a9fd4;
+      font-weight: 700;
+    }
+
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .lang-badge {
+      font-size: 11px;
+      background: rgba(125,183,255,.18);
+      border: 1px solid rgba(125,183,255,.35);
+      border-radius: 999px;
+      padding: 3px 8px;
+      color: rgba(10,18,40,.70);
+    }
+
+    .interest-list {
+      font-size: 12px;
+      color: rgba(10,18,40,.65);
+      line-height: 1.9;
+    }
+
+    .exp-item {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(40,90,160,.08);
+    }
+
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .exp-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .exp-date {
+      font-size: 11px;
+      color: rgba(10,18,40,.50);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .exp-company {
+      font-size: 12px;
+      color: #5a9fd4;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .exp-tasks {
+      list-style: none;
+      padding: 0;
+    }
+
+    .exp-tasks li {
+      font-size: 12px;
+      color: rgba(10,18,40,.65);
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .exp-tasks li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #5a9fd4;
+      font-size: 11px;
+    }
+
+    .certif-item {
+      font-size: 13px;
+      color: rgba(10,18,40,.70);
+      padding: 6px 10px;
+      background: rgba(125,183,255,.1);
+      border: 1px solid rgba(125,183,255,.25);
+      border-radius: 10px;
+      margin-bottom: 6px;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .cv { border-radius: 0; box-shadow: none; border: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <div class="header">
+      <img class="photo" src="Photo CV.jpg" alt="Photo Dinha HEYNEGEN" />
+      <div class="header-info">
+        <h1>DINHA <span>HEYNEGEN</span></h1>
+        <p class="titre">Étudiante BTS SIO option SISR — Technicienne Support Informatique</p>
+        <p class="profil">Étudiante en deuxième année de BTS SIO option SISR à l'école INGETIS, en alternance chez TRUMPF. Attirée par les défis techniques et la résolution de problèmes complexes, je vise à évoluer vers la cybersécurité offensive et devenir red teamer.</p>
+        <div class="contact-pills">
+          <span class="pill">📞 +33 7 82 28 56 46</span>
+          <span class="pill">✉️ dinha.heynegen@gmail.com</span>
+          <span class="pill">📍 Paris, Île-de-France</span>
+          <span class="pill">🔗 <a href="https://www.linkedin.com/in/dinha-heynegen-78b2b124a/" target="_blank">LinkedIn</a> </span>
+          <span class="pill">🚗 Permis B</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="sidebar">
+
+        <div>
+          <div class="section-title">Compétences techniques</div>
+          <div class="skill-item"><strong>Systèmes :</strong> Windows 10/11/Server, Ubuntu, Debian, Kali Linux</div>
+          <div class="skill-item"><strong>Réseaux :</strong> VLAN, VPN OpenVPN, Proxy Squid, DNS, DHCP, TCP/IP</div>
+          <div class="skill-item"><strong>Sécurité :</strong> pfSense, Wazuh, Wireshark, simulation d'attaques</div>
+          <div class="skill-item"><strong>Supervision :</strong> Zabbix, GLPI</div>
+          <div class="skill-item"><strong>Langages :</strong> HTML/CSS, Bash, JavaScript, Python, SQL</div>
+          <div class="skill-item"><strong>Virtualisation :</strong> VMware, VirtualBox</div>
+        </div>
+
+        <div>
+          <div class="section-title">Compétences relationnelles</div>
+          <div class="soft-item">Communication</div>
+          <div class="soft-item">Gestion du stress</div>
+          <div class="soft-item">Autonomie</div>
+          <div class="soft-item">Rigueur</div>
+          <div class="soft-item">Travail en équipe</div>
+        </div>
+
+        <div>
+          <div class="section-title">Langues</div>
+          <div class="lang-item"><span>Anglais</span><span class="lang-badge">C1 — Courant</span></div>
+          <div class="lang-item"><span>Espagnol</span><span class="lang-badge">A2 — Scolaire</span></div>
+          <div class="lang-item"><span>Japonais</span><span class="lang-badge">A1 — Débutant</span></div>
+        </div>
+
+        <div>
+          <div class="section-title">Certifications</div>
+          <div class="certif-item">Responsive Web Design — freeCodeCamp</div>
+        </div>
+
+        <div>
+          <div class="section-title">Centres d'intérêt</div>
+          <div class="interest-list">
+            🏀 Sport (Basketball, Karaté, CrossFit)<br>
+            🎹 Musique autodidacte (Piano, Violon, Guitare)<br>
+            🎮 Jeux vidéo &amp; escape games<br>
+            ✈️ Voyages
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main">
+
+        <div>
+          <div class="section-title">Formation</div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">BTS Services Informatiques aux Organisations</span>
+              <span class="exp-date">2024 – 2026</span>
+            </div>
+            <div class="exp-company">INGETIS, Paris — Option SISR</div>
+            <ul class="exp-tasks">
+              <li>Administration systèmes et réseaux, cybersécurité, virtualisation</li>
+              <li>Projets : VPN OpenVPN + Squid, supervision Zabbix, Active Directory</li>
+            </ul>
+          </div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Licence de Physique</span>
+              <span class="exp-date">2021 – 2024</span>
+            </div>
+            <div class="exp-company">Université de Poitiers</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Baccalauréat Scientifique</span>
+              <span class="exp-date">2018</span>
+            </div>
+            <div class="exp-company">Lycée Maurice Ravel, Paris</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">Expériences professionnelles</div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Technicienne Support Informatique</span>
+              <span class="exp-date">Sept. 2025 – Août 2026</span>
+            </div>
+            <div class="exp-company">TRUMPF — Alternance</div>
+            <ul class="exp-tasks">
+              <li>Support utilisateur à distance (TeamViewer, Bureau à distance)</li>
+              <li>Gestion des incidents et demandes via logiciel de ticketing interne</li>
+              <li>Installation et configuration de logiciels et machines industrielles</li>
+              <li>Traitement des demandes via hotline et priorisation des incidents</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Stagiaire puis CDD — Support Informatique</span>
+              <span class="exp-date">Juin – Août 2025</span>
+            </div>
+            <div class="exp-company">Groupe Vital, La Garenne-Colombes</div>
+            <ul class="exp-tasks">
+              <li>Enrôlement et paramétrage de tablettes destinées à des élèves</li>
+              <li>Assemblage des contenants (bornes Wi-Fi, tablettes, câbles)</li>
+              <li>Prise de rendez-vous téléphonique avec confirmation par mail</li>
+              <li>Inventaire du matériel récupéré</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div>
+          <div class="section-title">Projets</div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Mise en place VPN OpenVPN + Proxy Squid</span>
+              <span class="exp-date">2026</span>
+            </div>
+            <div class="exp-company">Projet E6 — Infrastructure NetSecure</div>
+            <ul class="exp-tasks">
+              <li>Déploiement d'un accès distant sécurisé avec chiffrement des communications</li>
+              <li>Filtrage et contrôle des accès web via proxy Squid</li>
+            </ul>
+          </div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Supervision Zabbix + Active Directory</span>
+              <span class="exp-date">2025 – 2026</span>
+            </div>
+            <div class="exp-company">Projet infrastructure SISR</div>
+            <ul class="exp-tasks">
+              <li>Mise en place d'une solution de supervision des serveurs et services</li>
+              <li>Configuration d'alertes pour la détection rapide d'incidents</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
